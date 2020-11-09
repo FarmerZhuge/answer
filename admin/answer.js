@@ -75,7 +75,7 @@ function answer(connect, data) {
         connect.sendText(JSON.stringify(msg));
     }
     let owner = {
-        name: data.name,
+        name: first,
         type: 'answer'
     }
     admin.sendText(JSON.stringify(owner)) // 向管理员发送第一个抢答者的姓名
