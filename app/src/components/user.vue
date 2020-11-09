@@ -1,8 +1,8 @@
 <template>
   <div>
     <div v-if="!userName" class="login">
-      <input type="text" v-model='user' laceholder="请输入姓名"> 
-      <button class="login" @click="login">登录</button>
+      <input type="text" class="input" v-model='user' laceholder="请输入姓名"> 
+      <button class="submit" @click="login">登录</button>
     </div>
     <div v-else :class="['button', lock ? 'disabled' : '']" @click="submit">抢答</div>
     <div class="mark" v-show="show">
@@ -133,14 +133,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .button {
-    margin: 100px auto;
-    width: 100px;
-    height: 100px;
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     color: #fff;
     background: lightseagreen;
-    line-height: 100px;
-    font-size: 24px;
+    line-height: 200px;
+    font-size: 48px;
     -webkit-user-select: none;
   }
   .disabled {
@@ -156,5 +156,27 @@ export default {
     color: #fff;
     font-size: 48px;
     line-height: 400px;
+  }
+
+  .login {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+  }
+  .login .input {
+    width: 200px;
+    height: 44px;
+    font-size: 36px;
+    border: #ccc 1px solid;
+  }
+  .login .submit {
+    margin-top: 0;
+    width: 80px;
+    height: 48px;
+    line-height: 48px;
+    background: #67C23A;
+    border: none;
+    color: #fff;
+    font-size: 18px;
   }
 </style>

@@ -78,14 +78,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .button {
-    margin: 100px auto;
-    width: 100px;
-    height: 100px;
+    margin: 150px auto;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     color: #fff;
     background: lightseagreen;
-    line-height: 100px;
-    font-size: 24px;
+    line-height: 200px;
+    font-size: 48px;
     -webkit-user-select: none;
   }
 </style>
