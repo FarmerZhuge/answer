@@ -78,7 +78,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .button {
-    margin: 150px auto;
+    margin: 200px auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
